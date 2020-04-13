@@ -1,0 +1,41 @@
+* {
+  padding: 0%;
+  margin: 0cm;
+}
+body {
+  background-image: url(https://cdn.pixabay.com/photo/2018/06/30/09/31/background-image-3507320_960_720.jpg);
+}
+.h1 {
+  color: white;
+}
+.wrapper {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex: 3;
+  /* background: skyblue; */
+  height: 100vh;
+}
+.sidebar {
+  flex: 1;
+  /* background: lightgreen; */
+  height: 100vh;
+}
+.sidebar > p {
+  color: white;
+}
+.card img {
+  max-width: 50%;
+}
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+}
