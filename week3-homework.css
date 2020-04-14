@@ -3,10 +3,14 @@
   margin: 0cm;
 }
 body {
-  background-image: url(https://cdn.pixabay.com/photo/2018/06/30/09/31/background-image-3507320_960_720.jpg);
+  background-image: url(https://wallpaperaccess.com/full/22919.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .h1 {
   color: white;
+  background-color: midnightblue;
+  text-align: center;
 }
 .wrapper {
   display: flex;
@@ -21,10 +25,12 @@ body {
 .sidebar {
   flex: 1;
   /* background: lightgreen; */
-  height: 100vh;
+  height: 100%vh;
+  background-color: skyblue;
+  border-radius: 15px;
 }
 .sidebar > p {
-  color: white;
+  color: black;
 }
 .card img {
   max-width: 50%;
@@ -33,9 +39,13 @@ body {
   display: flex;
   justify-content: space-evenly;
   color: white;
+  background-color: midnightblue;
 }
 @media only screen and (max-width: 900px) {
-  .container {
+  .wrapper {
     flex-direction: column;
   }
+  /* .container {
+    flex-direction: column;
+  } */
 }
